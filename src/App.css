@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  overscroll-behavior: none;
+  scroll-behavior: smooth;
+  height: auto;
+  width: 100vw;
+  background-color: #F2F2F2;
+}
+
+.App { overflow-x: hidden; }
+
+*::selection {
+  color: #FFFFFF;
+  background-color: #3CDE89;
+}
+
+h1::selection, h2::selection {
+  color: #F2F2F2;
+  -webkit-text-stroke: 1px #195E3B;
+  background-color: #3CDE89;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-88px)}
+}
